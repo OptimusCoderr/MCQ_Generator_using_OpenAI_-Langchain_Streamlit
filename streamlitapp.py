@@ -19,7 +19,7 @@ from src.mcqgenerator.logger import logging
 
 
 #loading json file
-with open('C:/Users/User/Desktop/PYTHON_TUTORIAL/LLM/MCQ_Generator_using_OpenAI_ Langchain_Streamlit/Response.json', 'r') as file:
+with open('response.json', 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 
