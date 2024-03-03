@@ -1,1 +1,4 @@
+.env
 env
+env/.nonadmin
+env/conda-meta/history
