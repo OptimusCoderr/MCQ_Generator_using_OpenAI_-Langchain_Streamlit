@@ -55,17 +55,17 @@ with st.form("user inputs"):
                 with get_openai_callback() as cb:
                     response=generate_evaluate_chain(
                         {
-                            "text": TEXT,
-                            "number": NUMBER,
-                            "subject":SUBJECT,
-                            "tone": TONE,
+                            "text": text,
+                            "number": mcq_count,
+                            "subject": subject,
+                            "tone": tone,
                             "response_json": json.dumps(RESPONSE_JSON)
                         }
                     )
                 #st.write(response)
 
             except Exception as e:
-                traceback.print_exception(typ(e), e, e.__traceback__)
+                traceback.print_exception(type(e), e, e.__traceback__)
                 st.error("Error")
             
             else:
